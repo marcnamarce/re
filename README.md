@@ -181,4 +181,11 @@ LayoutInflater inflater;
     }
 
 }
+////////////////////////////////ОТКРЫТИЕ
+public void OnClick1 (View view)
+    {
+        Intent intent = new Intent(MainActivity.this,autorization.class);
+        startActivity(intent);
+        
+    }
 
