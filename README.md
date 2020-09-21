@@ -188,4 +188,21 @@ public void OnClick1 (View view)
         startActivity(intent);
         
     }
+//писать в валуес кнтролер 
+[Route("api/ADDUsersssses/{id}")]
+        public string  GetADDUserssssess(string id)
+        {
+            string[] userss = id.Split('=');
 
+            Person person1 = new Person();
+
+            person1.ID_person = db.Person.Max(r => r.ID_person) + 1;
+            person1.s_firstname = userss[0];
+            person1.s_lastname = userss[1];
+            person1.s_patrinymic = userss[2];
+            person1.s_phone = userss[3];
+            db.Person.Add(person1);
+            db.SaveChanges();
+}
+.////////////// строка в браузере имеет вид имеет вид
+https://192.168.1.206:44341/api/ADDUsersssses/firstame=lastname=pat=phone
