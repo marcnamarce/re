@@ -206,3 +206,13 @@ public void OnClick1 (View view)
 }
 .////////////// строка в браузере имеет вид имеет вид
 https://192.168.1.206:44341/api/ADDUsersssses/firstame=lastname=pat=phone
+
+[Route("api/event/delete={id}")]
+// DELETE api/values/5
+Oreferences
+public int GetDeleteEvent(int id)
+Event delEvent = new Event() {EventId-id};
+db. Event. Attach(eleventh);
+db. Event. Remove(relevant);
+db.SaveChanges();
+return 1;
